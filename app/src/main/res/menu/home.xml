@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/vaiA"
+        android:icon="@drawable/ic_book_open_white_24dp"
+        android:title="@string/vaiA"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/cerca"
+        myapp:actionViewClass="android.support.v7.widget.SearchView"
+        myapp:showAsAction="collapseActionView|always" />
+
+    <item
+        android:id="@+id/filter"
+        android:icon="@drawable/ic_filter_white_24dp"
+        android:title="@string/filtra"
+        myapp:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/whole_word"
+                android:checkable="true"
+                android:checkableBehavior="all"
+                android:checked="true"
+                android:icon="?iconaFiltro1"
+                android:title="@string/parola_intera" />
+
+            <item
+                android:id="@+id/ignora_accenti"
+                android:checkable="true"
+                android:checkableBehavior="all"
+                android:checked="true"
+                android:icon="?iconaFiltro2"
+                android:title="@string/ignora_accenti" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/help"
+        android:icon="@drawable/ic_help_outline_white_24dp"
+        android:title="@string/aiuto"
+        myapp:showAsAction="always"
+        tools:ignore="AlwaysShowAction" />
+
+</menu>

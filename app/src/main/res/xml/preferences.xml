@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress AndroidElementNotAllowed -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:key="pref_key_generali"
+
+        android:title="@string/imp_generali">
+
+        <ListPreference
+            android:defaultValue="@string/imp_tema_default"
+            android:dialogTitle="@string/imp_tema"
+            android:entries="@array/imp_tema_entries"
+            android:entryValues="@array/imp_tema_values"
+            android:key="pref_tema"
+            android:summary="@string/imp_tema_des"
+            android:title="@string/imp_tema" />
+
+        <com.thebluealliance.spectrum.SpectrumPreferenceCompat
+            android:defaultValue="@color/colorPrimary1"
+            android:key="pref_colore"
+            android:summary="@string/imp_colore_des"
+            android:title="@string/imp_colore"
+            app:spectrum_colors="@array/colori_primari" />
+
+        <com.thebluealliance.spectrum.SpectrumPreferenceCompat
+            android:defaultValue="@color/colore_evidenziazione1"
+            android:key="pref_colore_evidenziazione"
+            android:summary="@string/imp_colore_evidenziazione_des"
+            android:title="@string/imp_colore_evidenziazione"
+            app:spectrum_colors="@array/colori_evidenziazione" />
+
+        <com.barisi.flavio.bibbiacattolica.gui.BibbiaListPreference
+            android:defaultValue="@string/imp_vers_bibbia_default"
+            android:dialogTitle="@string/imp_vers_bibbia"
+            android:key="pref_vers_bibbia"
+            android:summary="@string/imp_vers_bibbia_des"
+            android:title="@string/imp_vers_bibbia" />
+
+        <ListPreference
+            android:defaultValue="@string/imp_lingua_default"
+            android:dialogTitle="@string/imp_lingua"
+            android:entries="@array/imp_lingua_entries"
+            android:entryValues="@array/imp_lingua_values"
+            android:key="lingua"
+            android:summary="@string/imp_lingua_des"
+            android:title="@string/imp_lingua" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_versetti"
+            android:summary="@string/imp_versetti_des"
+            android:title="@string/imp_versetti" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_titoli"
+            android:summary="@string/imp_titoli_des"
+            android:title="@string/imp_titoli" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_note"
+            android:summary="@string/imp_note_des"
+            android:title="@string/imp_note" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_leggi_alta_voce"
+            android:summary="@string/imp_leggi_des"
+            android:title="@string/imp_leggi" />
+
+        <ListPreference
+            android:defaultValue="1.0f"
+            android:dialogTitle="@string/imp_velocita_lettura"
+            android:entries="@array/imp_velocita_lettura_entries"
+            android:entryValues="@array/imp_velocita_lettura_values"
+            android:key="pref_velocita_lettura"
+            android:summary="@string/imp_velocita_lettura_des"
+            android:title="@string/imp_velocita_lettura" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_schermo_acceso"
+            android:summary="@string/imp_schermo_acceso_des"
+            android:title="@string/imp_schermo_acceso" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="acc_hardware"
+            android:summary="@string/imp_acc_des"
+            android:title="@string/imp_acc" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="accenti_greco"
+            android:summary="@string/imp_accenti_des"
+            android:title="@string/imp_accenti" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_mostra_num_capitoli"
+            android:summary="@string/imp_mostra_num_capitoli_des"
+            android:title="@string/imp_mostra_num_capitoli" />
+
+        <ListPreference
+            android:defaultValue="%"
+            android:dialogTitle="@string/CapitoloCasualeShort"
+            android:entries="@array/imp_capitolo_causale_entries"
+            android:entryValues="@array/imp_capitolo_causale_values"
+            android:key="pref_capitolo_casuale"
+            android:summary="@string/CapitoloCasuale"
+            android:title="@string/CapitoloCasualeShort" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_letture"
+        android:title="@string/imp_letture_giorno">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_litugia_epifania_festiva"
+            android:summary="@string/imp_lit_epifania_festiva_des"
+            android:title="@string/imp_lit_epifania_festiva" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_liturgia_versetti"
+            android:summary="@string/imp_lit_mostra_versetti_des"
+            android:title="@string/imp_lit_mostra_versetti" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_key_avanzate"
+        android:title="@string/imp_avanzate">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_nascondi_toolbar"
+            android:summary="@string/imp_nascondi_toolbar_des"
+            android:title="@string/imp_nascondi_toolbar" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_svuota_cronologia"
+            android:summary="@string/imp_svuota_cronologia_des"
+            android:title="@string/imp_svuota_cronologia" />
+
+        <Preference
+            android:key="pref_info"
+            android:summary=""
+            android:title="@string/info_short" />
+
+        <Preference
+            android:key="pref_reimposta"
+            android:summary="@string/reimposta_preferenze"
+            android:title="@string/reimposta_preferenze_short" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_grey600_24dp"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/nav_antico"
+            android:icon="@drawable/ic_book_open_variant_grey600_24dp"
+            android:title="@string/title_anticoTestamento" />
+        <item
+            android:id="@+id/nav_nuovo"
+            android:icon="@drawable/ic_fish_grey600_24dp"
+            android:title="@string/title_nuovoTestamento" />
+        <item
+            android:id="@+id/nav_daily"
+            android:icon="@drawable/ic_date_range_grey600_24dp"
+            android:title="@string/letture_del_giorno" />
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_star_grey600_24dp"
+            android:title="@string/bookmarks" />
+        <item
+            android:id="@+id/nav_maps"
+            android:icon="@drawable/ic_maps_grey600_24dp"
+            android:title="@string/maps" />
+        <item
+            android:id="@+id/nav_prayers"
+            android:icon="@drawable/ic_pray_grey600_24dp"
+            android:title="@string/preghiere" />
+    </group>
+
+    <group android:id="@+id/group2">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_grey600_24dp"
+            android:title="@string/impostazioni" />
+        <item
+            android:id="@+id/nav_crediti"
+            android:icon="@drawable/ic_information_outline_grey600_24dp"
+            android:title="@string/credits" />
+
+        <item
+            android:id="@+id/nav_guida"
+            android:icon="@drawable/ic_help_grey600_24dp"
+            android:title="@string/title_guida" />
+    </group>
+
+</menu>

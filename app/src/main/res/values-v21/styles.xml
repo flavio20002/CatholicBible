@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertTheme" parent="android:Theme.Material.Light.Dialog.Alert">
+        <item name="android:colorAccent">?colorePrincipale</item>
+    </style>
+
+    <style name="AlertThemeDark" parent="android:Theme.Material.Dialog.Alert">
+        <item name="android:colorAccent">@color/oro</item>
+    </style>
+
+</resources>

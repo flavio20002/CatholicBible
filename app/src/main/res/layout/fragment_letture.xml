@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/confronta_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bianco"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/circular_progress"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="24dp"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/CircularProgress" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.NestedWebView
+        android:id="@+id/article_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.VerticalWebViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.section.SectionTitleIndicator
+        android:id="@+id/fast_scroller_section_title_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_gravity="end"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp" />
+
+    <View
+        android:id="@+id/hint"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent" />
+
+</FrameLayout>

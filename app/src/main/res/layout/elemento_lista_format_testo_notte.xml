@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/elementoListaCategoria"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="?coloreSfondo"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_categoria"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_giorno"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bottone_bianco"
+            android:text="A"
+            android:textColor="@color/nero"
+            android:textSize="16dp"
+            android:fontFamily="serif" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_notte"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bottone_nero"
+            android:text="A"
+            android:textColor="@color/bianco"
+            android:textSize="16dp"
+            android:fontFamily="serif" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_giallo"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bottone_giallo"
+            android:text="A"
+            android:textColor="@color/bottoneGialloTesto"
+            android:textSize="16dp"
+            android:fontFamily="serif" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/button_scuro"
+            android:layout_width="54dp"
+            android:layout_height="36dp"
+            android:background="@drawable/bottone_scuro"
+            android:text="A"
+            android:textColor="@color/bianco"
+            android:textSize="16dp"
+            android:fontFamily="serif" />
+
+    </LinearLayout>
+
+</LinearLayout>

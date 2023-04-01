@@ -1,0 +1,32 @@
+## This is a directory/file filter template for WinMerge
+name: Android
+desc: Longer description
+
+## Select if filter is inclusive or exclusive
+## Inclusive (loose) filter lets through all items not matching rules
+## Exclusive filter lets through only items that match to rule
+## include or exclude
+def: include
+
+## Filters for filenames begin with f:
+## Filters for directories begin with d:
+## (Inline comments begin with " ##" and extend to the end of the line)
+
+f: \.iml$ ## Filter for filename
+f: \.bat$ ## Filter for filename
+f: gradlew$ ## Filter for filename
+f: gradle.properties$ ## Filter for filename
+f: local.properties$ ## Filter for filename
+f: .gitignore$ ## Filter for filename
+f: build.gradle$ ## Filter for filename
+
+
+d: \\build$ ## Filter for directory
+d: \\.git$ ## Filter for directory
+d: \\.gradle$ ## Filter for directory
+d: \\.idea$ ## Filter for directory
+d: \\test$ ## Filter for directory
+d: \\androidTest$ ## Filter for directory
+d: \\captures$ ## Filter for directory
+d: \\gradle$ ## Filter for directory
+d: \\wrapper$ ## Filter for directory

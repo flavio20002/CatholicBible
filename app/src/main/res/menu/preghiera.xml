@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_font"
+        android:icon="@drawable/ic_format_size_white_24dp"
+        android:title="@string/modifica_carattere"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_cambia_lingua"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/cambia_lingua"
+        myapp:showAsAction="never" />
+
+</menu>

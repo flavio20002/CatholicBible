@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="imp_lingua_entries">
+        <item>Italian</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="imp_lingua_values">
+        <item>"it"</item>
+        <item>"en"</item>
+    </string-array>
+
+    <string-array name="imp_tema_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="imp_tema_values">
+        <item>"light"</item>
+        <item>"dark"</item>
+        <item>"black"</item>
+    </string-array>
+
+    <string-array name="a_capo">
+        <item>Default</item>
+        <item>Compact</item>
+    </string-array>
+
+    <string-array name="giustificato">
+        <item>Default</item>
+        <item>Left</item>
+        <item>Justified</item>
+    </string-array>
+
+    <string-array name="imp_capitolo_causale_entries">
+        <item>All</item>
+        <item>@string/title_anticoTestamento</item>
+        <item>@string/title_nuovoTestamento</item>
+    </string-array>
+
+    <string-array name="imp_capitolo_causale_values">
+        <item>"%"</item>
+        <item>"A"</item>
+        <item>"N"</item>
+    </string-array>
+
+    <string-array name="imp_velocita_lettura_entries">
+        <item>Very slow</item>
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+        <item>Very fast</item>
+    </string-array>
+
+    <string-array name="imp_velocita_lettura_values">
+        <item>"0.3f"</item>
+        <item>"0.5f"</item>
+        <item>"1.0f"</item>
+        <item>"1.5f"</item>
+        <item>"2.0f"</item>
+    </string-array>
+
+</resources>

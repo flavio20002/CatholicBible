@@ -1,0 +1,55 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_favourite"
+        android:icon="@drawable/ic_star_outline_white_24dp"
+        android:title="@string/salva_segnalibri"
+        myapp:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_font"
+        android:icon="@drawable/ic_format_size_white_24dp"
+        android:title="@string/modifica_carattere"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_note"
+        android:checked="false"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/mostra_note"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_leggi_alta_voce"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/smetti_leggi_alta_voce"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cambia_versione_sinistra"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/cambia_versione_sinistra"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cambia_versione_destra"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/cambia_versione_destra"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_aggiungi_terza_versione"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/aggiungi_terza_versione"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_smetti_confronto"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/smetti_confronto"
+        myapp:showAsAction="never" />
+
+</menu>

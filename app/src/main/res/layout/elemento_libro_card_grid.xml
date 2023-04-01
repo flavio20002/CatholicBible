@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.barisi.flavio.bibbiacattolica.gui.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:clickable="true"
+    app:cardBackgroundColor="?coloreCard"
+    app:cardCornerRadius="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="?navigatorSelezionato"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/siglaLibro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="16sp"
+            android:textStyle="normal|bold" />
+
+    </RelativeLayout>
+
+</com.barisi.flavio.bibbiacattolica.gui.SquareCardView>

@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+def getVersionName = { ->
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'describe', '--tags'
+        standardOutput = stdout
+    }
+    return stdout.toString().trim()
+}
+
+def getVersionNumber = { ->
+    def nome = getVersionName()
+    try {
+        return Integer.valueOf(nome.replace(".", ""))
+    } catch (Exception ignored) {
+        return 1
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "com.barisi.flavio.bibbiacattolica"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode getVersionNumber()
+        versionName getVersionName()
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
+    implementation "com.android.support:preference-v14:${rootProject.ext.supportLibVersion}"
+
+    implementation("com.github.deano2390:MaterialShowcaseView:1.3.4", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.github.paolorotolo:appintro:4.0.0", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.thebluealliance:spectrum:0.6.0", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.google.code.gson:gson:2.8.5", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.github.rey5137:material:1.2.5", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.android.support.constraint:constraint-layout:1.1.3", {
+        exclude group: 'com.android.support'
+    })
+
+    implementation("com.github.chrisbanes:PhotoView:2.0.0", {
+        exclude group: 'com.android.support'
+    })
+
+    testImplementation 'junit:junit:4.12'
+}

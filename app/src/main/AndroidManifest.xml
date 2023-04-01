@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.barisi.flavio.bibbiacattolica"
+    android:installLocation="auto">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/my_backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Light">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.barisi.flavio.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".LoadingActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:logo="@mipmap/ic_launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:logo="@mipmap/ic_launcher" />
+        <activity
+            android:name=".IntroActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>

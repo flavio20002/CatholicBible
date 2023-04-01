@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/invia_email"
+        android:icon="@drawable/ic_email_white_24dp"
+        android:title="@string/inviaEmail"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/altre_app"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/altreApp"
+        myapp:showAsAction="never" />
+
+</menu>

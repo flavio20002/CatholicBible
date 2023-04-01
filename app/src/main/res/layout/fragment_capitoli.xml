@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?coloreSfondo">
+
+    <com.barisi.flavio.bibbiacattolica.gui.AutofitRecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="vertical" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.section.SectionTitleIndicator
+        android:id="@+id/fast_scroller_section_title_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_gravity="right"
+        android:layout_marginRight="50dp"/>
+
+    <View
+        android:id="@+id/hint"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_gravity="right|top"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_list"
+        android:textSize="25sp" />
+
+</FrameLayout>
+
+

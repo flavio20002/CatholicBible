@@ -1,0 +1,273 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorePrincipale">@color/colorPrimary1</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark1</item>
+        <item name="coloreSecondario">@color/colorSecondary1</item>
+        <item name="coloreSfondo">@color/sfondo_material_light</item>
+        <item name="coloreCard">@color/sfondo_floating_material_light</item>
+        <item name="coloreCardSelezionato">@color/sfondo_floating_selezionato_material_light</item>
+        <item name="coloreSpeciale">@color/testoRosso</item>
+        <item name="coloreIcone">@color/iconaGrigia</item>
+        <item name="iconaFabPause">@drawable/ic_pause_white_24dp</item>
+        <item name="iconaFabPlay">@drawable/ic_play_white_24dp</item>
+        <item name="iconaFabRewind">@drawable/ic_fast_rewind_white_24dp</item>
+        <item name="temaPopupActionBar">@style/ActionBarPopUpThemeOverlay</item>
+        <item name="iconaFiltro1">@drawable/ic_abc_grey600_24dp</item>
+        <item name="iconaFiltro2">@drawable/ic_letter_grey600_24dp</item>
+        <item name="navigatorSelezionato">@drawable/activated_background</item>
+        <item name="fabRippleEffect">@color/pulsante</item>
+        <item name="colorAccent">?colorePrincipale</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">?colorePrincipale</item>
+        <item name="android:textColor">@color/primary_text_material_light</item>
+        <item name="android:textColorPrimary">@color/primary_text_material_light</item>
+        <item name="android:textColorSecondary">@color/secondary_text_material_light</item>
+        <item name="colorPrimary">?colorePrincipale</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">?colorePrincipale</item>
+        <item name="colorPrimaryDark">?colorePrincipaleScuro</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">?colorePrincipaleScuro
+        </item>
+        <item name="actionModeBackground">@color/darkgrey</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_bar</item>
+        <item name="preferenceTheme">@style/MyPreferenceTheme</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="android:buttonTint" tools:targetApi="lollipop">?colorePrincipale</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="lollipop">false</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="lollipop">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="android:alertDialogTheme">@style/AlertTheme</item>
+        <item name="android:datePickerDialogTheme" tools:targetApi="lollipop">@style/DatePicketTheme
+        </item>
+    </style>
+
+    <style name="AppTheme.Dark" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorePrincipale">@color/colorPrimary1</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark1</item>
+        <item name="coloreSecondario">@color/colorSecondary1</item>
+        <item name="coloreSfondo">@color/sfondo_material_dark</item>
+        <item name="coloreCard">@color/sfondo_floating_material_dark</item>
+        <item name="coloreCardSelezionato">@color/sfondo_floating_selezionato_material_dark</item>
+        <item name="coloreSpeciale">@color/oro</item>
+        <item name="coloreIcone">@color/bianco</item>
+        <item name="iconaFabPause">@drawable/ic_pause_black_24dp</item>
+        <item name="iconaFabPlay">@drawable/ic_play_black_24dp</item>
+        <item name="iconaFabRewind">@drawable/ic_fast_rewind_black_24dp</item>
+        <item name="temaPopupActionBar">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="iconaFiltro1">@drawable/ic_abc_white_24dp</item>
+        <item name="iconaFiltro2">@drawable/ic_letter_white_24dp</item>
+        <item name="navigatorSelezionato">@drawable/activated_background_light</item>
+        <item name="fabRippleEffect">@color/pulsanteChiaro</item>
+        <item name="colorAccent">@color/oro</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/oro</item>
+        <item name="android:textColor">@color/primary_text_material_dark</item>
+        <item name="android:textColorPrimary">@color/primary_text_material_dark</item>
+        <item name="android:textColorSecondary">@color/secondary_text_material_dark</item>
+        <item name="colorPrimary">?colorePrincipale</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">?colorePrincipale</item>
+        <item name="colorPrimaryDark">?colorePrincipaleScuro</item>
+        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">?colorePrincipaleScuro
+        </item>
+        <item name="actionModeBackground">@color/darkgrey</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scroll_bar_dark</item>
+        <item name="preferenceTheme">@style/MyPreferenceTheme</item>
+        <item name="autoCompleteTextViewStyle">@style/cursorColor</item>
+        <item name="android:buttonTint" tools:targetApi="lollipop">@color/oro</item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="lollipop">false</item>
+        <item name="android:windowTranslucentNavigation" tools:targetApi="lollipop">false</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="android:alertDialogTheme">@style/AlertThemeDark</item>
+        <item name="android:datePickerDialogTheme" tools:targetApi="lollipop">
+            @style/DatePicketThemeDark
+        </item>
+    </style>
+
+    <style name="MyPreferenceTheme" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="preferenceCategoryStyle">@style/MyPreferenceCategoryStyle</item>
+        <item name="android:textAppearanceListItemSecondary" tools:targetApi="lollipop">
+            @style/TextAppearance.AppCompat.Menu
+        </item>
+        <item name="android:textAppearanceSmall">@style/TextAppearance.AppCompat.Menu</item>
+        <item name="preferenceFragmentListStyle">@style/MyScrollBarStyle</item>
+    </style>
+
+    <style name="MyScrollBarStyle">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="android:paddingStart" tools:targetApi="jelly_bean_mr1">0dp</item>
+        <item name="android:paddingEnd" tools:targetApi="jelly_bean_mr1">0dp</item>
+    </style>
+
+    <style name="MyPreferenceCategoryStyle" parent="Preference.Category.Material">
+        <item name="android:layout">@layout/my_preference_category_old</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/bianco</item>
+        <item name="android:textColorSecondary">@color/bianco</item>
+        <item name="colorAccent">@color/oro</item>
+    </style>
+
+    <style name="ActionBarPopUpThemeOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="colorAccent">?colorePrincipale</item>
+    </style>
+
+    <style name="cursorColor" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textCursorDrawable">@drawable/cursor</item>
+    </style>
+
+    <style name="ToolbarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/bianco</item>
+    </style>
+
+    <style name="ToolbarSubTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/bianco</item>
+    </style>
+
+    <style name="AlertTheme" parent="Theme.AppCompat.Light.Dialog.Alert" />
+
+    <style name="AlertThemeDark" parent="Theme.AppCompat.Dialog.Alert" />
+
+    <style name="DatePicketTheme" parent="android:Theme.Material.Light.Dialog" tools:targetApi="lollipop">
+        <item name="android:colorAccent">?colorePrincipale</item>
+    </style>
+
+    <style name="DatePicketThemeDark" parent="android:Theme.Material.Dialog" tools:targetApi="lollipop">
+        <item name="android:colorAccent">@color/oro</item>
+    </style>
+
+    <style name="CircularProgressLoading" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">@color/white</item>
+    </style>
+
+    <style name="MyPreferenceCategoryText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OverlayYellowTheme">
+        <item name="coloreCard">@color/bottoneGiallo</item>
+    </style>
+
+    <style name="OverlayBlackTheme">
+        <item name="coloreCard">@color/nero</item>
+    </style>
+
+    <style name="OverlayPrimaryColor2">
+        <item name="colorePrincipale">@color/colorPrimary2</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark2</item>
+    </style>
+
+    <style name="OverlayPrimaryColor3">
+        <item name="colorePrincipale">@color/colorPrimary3</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark3</item>
+    </style>
+
+    <style name="OverlayPrimaryColor4">
+        <item name="colorePrincipale">@color/colorPrimary4</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark4</item>
+    </style>
+
+    <style name="OverlayPrimaryColor5">
+        <item name="colorePrincipale">@color/colorPrimary5</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark5</item>
+    </style>
+
+    <style name="OverlayPrimaryColor6">
+        <item name="colorePrincipale">@color/colorPrimary6</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark6</item>
+    </style>
+
+    <style name="OverlayPrimaryColor7">
+        <item name="colorePrincipale">@color/colorPrimary7</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark7</item>
+    </style>
+
+    <style name="OverlayPrimaryColor8">
+        <item name="colorePrincipale">@color/colorPrimary8</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark8</item>
+    </style>
+
+    <style name="OverlayPrimaryColor9">
+        <item name="colorePrincipale">@color/colorPrimary9</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark9</item>
+    </style>
+
+    <style name="OverlayPrimaryColor10">
+        <item name="colorePrincipale">@color/colorPrimary10</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark10</item>
+    </style>
+
+    <style name="OverlayPrimaryColor11">
+        <item name="colorePrincipale">@color/colorPrimary11</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark11</item>
+    </style>
+
+    <style name="OverlayPrimaryColor12">
+        <item name="colorePrincipale">@color/colorPrimary12</item>
+        <item name="colorePrincipaleScuro">@color/colorPrimaryDark12</item>
+    </style>
+
+    <style name="OverlaySecondaryColor2">
+        <item name="coloreSecondario">@color/colorSecondary2</item>
+    </style>
+
+    <style name="OverlaySecondaryColor3">
+        <item name="coloreSecondario">@color/colorSecondary3</item>
+    </style>
+
+    <style name="OverlaySecondaryColor4">
+        <item name="coloreSecondario">@color/colorSecondary4</item>
+    </style>
+
+    <style name="OverlaySecondaryColor5">
+        <item name="coloreSecondario">@color/colorSecondary5</item>
+    </style>
+
+    <style name="OverlaySecondaryColor6">
+        <item name="coloreSecondario">@color/colorSecondary6</item>
+    </style>
+
+    <style name="OverlaySecondaryColor7">
+        <item name="coloreSecondario">@color/colorSecondary7</item>
+    </style>
+
+    <style name="OverlaySecondaryColor8">
+        <item name="coloreSecondario">@color/colorSecondary8</item>
+    </style>
+
+    <style name="OverlaySecondaryColor9">
+        <item name="coloreSecondario">@color/colorSecondary9</item>
+    </style>
+
+    <style name="OverlaySecondaryColor10">
+        <item name="coloreSecondario">@color/colorSecondary10</item>
+    </style>
+
+    <style name="OverlaySecondaryColor11">
+        <item name="coloreSecondario">@color/colorSecondary11</item>
+    </style>
+
+    <style name="OverlaySecondaryColor12">
+        <item name="coloreSecondario">@color/colorSecondary12</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/font_medio</item>
+    </style>
+
+    <style name="CircularProgress" parent="Material.Drawable.CircularProgress">
+        <item name="cpd_strokeColor">?colorAccent</item>
+    </style>
+
+</resources>

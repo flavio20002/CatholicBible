@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myapp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_cancella_segnalibri"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/cancellaTutti"
+        myapp:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_esporta_segnalibri"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/esportaSegnalibri"
+        myapp:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_importa_segnalibri"
+        android:icon="@drawable/ic_broom_white_24dp"
+        android:title="@string/importaSegnalibri"
+        myapp:showAsAction="never" />
+
+</menu>

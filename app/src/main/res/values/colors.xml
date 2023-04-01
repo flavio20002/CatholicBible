@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary1">#831928</color>
+    <color name="colorPrimary2">#232d53</color>
+    <color name="colorPrimary3">#C62828</color>
+    <color name="colorPrimary4">#AD1457</color>
+    <color name="colorPrimary5">#4527A0</color>
+    <color name="colorPrimary6">#1565C0</color>
+    <color name="colorPrimary7">#00796b</color>
+    <color name="colorPrimary8">#2E7D32</color>
+    <color name="colorPrimary9">#D84315</color>
+    <color name="colorPrimary10">#4E342E</color>
+    <color name="colorPrimary11">#546e7a</color>
+    <color name="colorPrimary12">#757575</color>
+
+    <color name="colorPrimaryDark1">#62131E</color>
+    <color name="colorPrimaryDark2">#1A223E</color>
+    <color name="colorPrimaryDark3">#941E1E</color>
+    <color name="colorPrimaryDark4">#820F41</color>
+    <color name="colorPrimaryDark5">#341D78</color>
+    <color name="colorPrimaryDark6">#104C90</color>
+    <color name="colorPrimaryDark7">#005B60</color>
+    <color name="colorPrimaryDark8">#225E25</color>
+    <color name="colorPrimaryDark9">#A23210</color>
+    <color name="colorPrimaryDark10">#3A2722</color>
+    <color name="colorPrimaryDark11">#3F525B</color>
+    <color name="colorPrimaryDark12">#585858</color>
+
+    <color name="colorSecondary1">#FFD700</color>
+    <color name="colorSecondary2">#C0C0C0</color>
+    <color name="colorSecondary3">#E5E4E2</color>
+    <color name="colorSecondary4">#CE93D8</color>
+    <color name="colorSecondary5">#64B5F6</color>
+    <color name="colorSecondary6">#4FC3F7</color>
+    <color name="colorSecondary7">#4DB6AC</color>
+    <color name="colorSecondary8">#81C784</color>
+    <color name="colorSecondary9">#DCE775</color>
+    <color name="colorSecondary10">#FFB74D</color>
+    <color name="colorSecondary11">#A1887F</color>
+    <color name="colorSecondary12">#E0E0E0</color>
+
+    <color name="oro">#FFFFD700</color>
+    <color name="bianco">#FFFFFFFF</color>
+    <color name="bianco_highlight">#33FFFFFF</color>
+    <color name="testoRosso">#ffcc0000</color>
+    <color name="nero">#FF000000</color>
+    <item name="darkgrey" type="color">#747574</item>
+    <item name="bottoneGrigio" type="color">#dcdcdc</item>
+    <item name="bottoneGiallo" type="color">#ece1ca</item>
+    <item name="bottoneGialloTesto" type="color">#ff645032</item>
+    <item name="pulsante" type="color">#40FFFFFF</item>
+    <item name="pulsanteChiaro" type="color">#40000000</item>
+    <color name="iconaGrigia">#757575</color>
+
+    <color name="sfondo_material_dark">#ff303030</color>
+    <color name="sfondo_material_light">#ffe2e2e2</color>
+    <color name="sfondo_floating_material_dark">#ff424242</color>
+    <color name="sfondo_floating_material_light">#ffffffff</color>
+    <color name="sfondo_floating_selezionato_material_dark">#ff303030</color>
+    <color name="sfondo_floating_selezionato_material_light">#ffEEEEEE</color>
+    <color name="primary_text_material_dark">#ffffffff</color>
+    <!--<color name="primary_text_material_light">#de000000</color>-->
+    <color name="primary_text_material_light">#ff000000</color>
+    <color name="secondary_text_material_dark">#b3ffffff</color>
+    <color name="secondary_text_material_light">#8a000000</color>
+
+    <color name="colore_evidenziazione1">#ffb0c4de</color>
+    <color name="colore_evidenziazione2">#f0debe</color>
+    <color name="colore_evidenziazione3">#99eaff</color>
+    <color name="colore_evidenziazione4">#FFAD99</color>
+    <color name="colore_evidenziazione5">#B2D6C1</color>
+    <color name="colore_evidenziazione6">#B7C0EB</color>
+    <color name="colore_evidenziazione7">#DBA2A2</color>
+    <color name="colore_evidenziazione8">#99C1EA</color>
+    <color name="colore_evidenziazione9">#9B9CB1</color>
+    <color name="colore_evidenziazione10">#E2E3C5</color>
+
+
+    <color name="intro1">#616161</color>
+    <color name="intro2">#ef5350</color>
+    <color name="intro3">#1565C0</color>
+    <color name="intro4">#FF8F00</color>
+    <color name="intro5">#7B1FA2</color>
+    <color name="intro6">#00796B</color>
+
+    <array name="colori_primari">
+        <item>@color/colorPrimary1</item>
+        <item>@color/colorPrimary2</item>
+        <item>@color/colorPrimary3</item>
+        <item>@color/colorPrimary4</item>
+        <item>@color/colorPrimary5</item>
+        <item>@color/colorPrimary6</item>
+        <item>@color/colorPrimary7</item>
+        <item>@color/colorPrimary8</item>
+        <item>@color/colorPrimary9</item>
+        <item>@color/colorPrimary10</item>
+        <item>@color/colorPrimary11</item>
+        <item>@color/colorPrimary12</item>
+    </array>
+
+    <array name="colori_secondari">
+        <item>@color/colorSecondary1</item>
+        <item>@color/colorSecondary2</item>
+        <item>@color/colorSecondary3</item>
+        <item>@color/colorSecondary4</item>
+        <item>@color/colorSecondary5</item>
+        <item>@color/colorSecondary6</item>
+        <item>@color/colorSecondary7</item>
+        <item>@color/colorSecondary8</item>
+        <item>@color/colorSecondary9</item>
+        <item>@color/colorSecondary10</item>
+        <item>@color/colorSecondary11</item>
+        <item>@color/colorSecondary12</item>
+    </array>
+
+    <array name="colori_evidenziazione">
+        <item>@color/colore_evidenziazione1</item>
+        <item>@color/colore_evidenziazione2</item>
+        <item>@color/colore_evidenziazione3</item>
+        <item>@color/colore_evidenziazione4</item>
+        <item>@color/colore_evidenziazione5</item>
+        <item>@color/colore_evidenziazione6</item>
+        <item>@color/colore_evidenziazione7</item>
+        <item>@color/colore_evidenziazione8</item>
+        <item>@color/colore_evidenziazione9</item>
+        <item>@color/colore_evidenziazione10</item>
+    </array>
+
+
+</resources>

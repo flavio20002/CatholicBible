@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?coloreSfondo">
+
+    <com.rey.material.widget.ProgressView
+        android:id="@+id/circular_progress"
+        android:layout_width="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center|top"
+        app:pv_autostart="true"
+        app:pv_circular="true"
+        app:pv_progressMode="indeterminate"
+        app:pv_progressStyle="@style/CircularProgress" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.VerticalRecyclerViewFastScroller
+        android:id="@+id/fast_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end" />
+
+    <com.barisi.flavio.bibbiacattolica.gui.fastScroll.section.SectionTitleIndicator
+        android:id="@+id/fast_scroller_section_title_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp" />
+
+    <View
+        android:id="@+id/hint"
+        android:layout_width="20dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|top"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/empty_list"
+        android:textSize="25sp" />
+
+</FrameLayout>
+
+

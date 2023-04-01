@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SplitPaneLayout">
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="splitterSize" format="dimension" />
+        <attr name="splitterMovable" format="boolean" />
+        <attr name="splitterPosition" format="dimension|fraction" />
+        <attr name="splitterBackground" format="reference|color" />
+        <attr name="splitterDraggingBackground" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTheme">
+        <attr name="colorePrincipale" format="reference"/>
+        <attr name="colorePrincipaleScuro" format="reference"/>
+        <attr name="coloreSecondario" format="reference"/>
+        <attr name="coloreSfondo" format="reference"/>
+        <attr name="coloreCard" format="reference"/>
+        <attr name="coloreCardSelezionato" format="reference"/>
+        <attr name="coloreSpeciale" format="reference"/>
+        <attr name="coloreIcone" format="reference"/>
+        <attr name="temaPopupActionBar" format="reference"/>
+        <attr name="iconaFiltro1" format="reference"/>
+        <attr name="iconaFiltro2" format="reference"/>
+        <attr name="navigatorSelezionato" format="reference"/>
+        <attr name="fabRippleEffect" format="reference"/>
+        <attr name="iconaFabPause" format="reference"/>
+        <attr name="iconaFabPlay" format="reference"/>
+        <attr name="iconaFabRewind" format="reference"/>
+    </declare-styleable>
+</resources>
