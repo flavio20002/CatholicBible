@@ -2,7 +2,7 @@ package com.barisi.flavio.bibbiacattolica;
 
 
 import android.content.Context;
-import android.support.design.widget.NavigationView;
+import com.google.android.material.navigation.NavigationView;
 import android.support.test.filters.LargeTest;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;

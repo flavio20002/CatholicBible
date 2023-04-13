@@ -1,8 +1,8 @@
 package com.barisi.flavio.bibbiacattolica.adapter.holder;
 
 import android.content.Context;
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.PopupMenu;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.appcompat.widget.PopupMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -11,9 +11,6 @@ import android.widget.TextView;
 
 import com.barisi.flavio.bibbiacattolica.R;
 import com.barisi.flavio.bibbiacattolica.Regex;
-import com.barisi.flavio.bibbiacattolica.Utility;
-import com.barisi.flavio.bibbiacattolica.database.ServiziDatabase;
-import com.barisi.flavio.bibbiacattolica.interfaces.NotaSegnalibroListener;
 import com.barisi.flavio.bibbiacattolica.interfaces.OnArticleFragmentInteractionListener;
 import com.barisi.flavio.bibbiacattolica.interfaces.SegnalibriListener;
 import com.barisi.flavio.bibbiacattolica.model.Segnalibro;

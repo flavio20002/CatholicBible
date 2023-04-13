@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.barisi.flavio.bibbiacattolica"
     android:installLocation="auto">
 
     <application
@@ -11,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.Light">
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="com.barisi.flavio.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
@@ -24,6 +23,7 @@
             android:name=".LoadingActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
+            android:exported="true"
             android:logo="@mipmap/ic_launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

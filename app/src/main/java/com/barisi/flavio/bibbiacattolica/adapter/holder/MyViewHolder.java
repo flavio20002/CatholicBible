@@ -1,8 +1,8 @@
 package com.barisi.flavio.bibbiacattolica.adapter.holder;
 
 import android.content.Context;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.RecyclerView;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.View;
 
 import com.barisi.flavio.bibbiacattolica.R;

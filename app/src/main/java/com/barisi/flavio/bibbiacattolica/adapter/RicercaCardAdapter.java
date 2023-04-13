@@ -3,7 +3,7 @@ package com.barisi.flavio.bibbiacattolica.adapter;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.text.Html;
 import android.util.SparseArray;
 import android.util.TypedValue;

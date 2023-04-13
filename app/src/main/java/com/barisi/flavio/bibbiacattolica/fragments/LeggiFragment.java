@@ -4,11 +4,11 @@ package com.barisi.flavio.bibbiacattolica.fragments;
 import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -90,7 +90,6 @@ public abstract class LeggiFragment extends Fragment {
         sfondoWebView(articleView);
         articleView.getSettings().setBlockNetworkLoads(true);
         articleView.getSettings().setJavaScriptEnabled(true);
-        articleView.getSettings().setAppCacheEnabled(false);
         articleView.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
 
         Boolean accellerazioneHW = Preferenze.ottieniAccellerazioneHardware(getContext());

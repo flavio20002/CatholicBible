@@ -5,14 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.View;
+import androidx.fragment.app.Fragment;
 
-import com.barisi.flavio.bibbiacattolica.model.Libro;
 import com.github.paolorotolo.appintro.AppIntro2;
 import com.github.paolorotolo.appintro.AppIntroFragment;
-
-import java.util.List;
 
 public class IntroActivity extends AppIntro2 {
 
