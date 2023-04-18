@@ -5,14 +5,10 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.View;
+import androidx.fragment.app.Fragment;
 
-import com.barisi.flavio.bibbiacattolica.model.Libro;
-import com.github.paolorotolo.appintro.AppIntro2;
-import com.github.paolorotolo.appintro.AppIntroFragment;
-
-import java.util.List;
+import com.github.appintro.AppIntro2;
+import com.github.appintro.AppIntroFragment;
 
 public class IntroActivity extends AppIntro2 {
 
@@ -30,8 +26,8 @@ public class IntroActivity extends AppIntro2 {
         primaVolta = getIntent().getBooleanExtra(PRIMA_VOLTA, true);
 
         setImageSkipButton(getResources().getDrawable(R.drawable.skip));
-        setProgressButtonEnabled(true);
-        setImmersiveMode(true);
+        setButtonsEnabled(true);
+        setImmersiveMode();
         setColorTransitionsEnabled(true);
 
         addSlide(AppIntroFragment.newInstance(getString(R.string.app_name), getString(R.string.intro1), R.drawable.chiavi, Preferenze.ottieniColorePrimario(this)));

@@ -1,7 +1,7 @@
 package com.barisi.flavio.bibbiacattolica.gui;
 
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentStatePagerAdapter;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.barisi.flavio.bibbiacattolica.fragments.LeggiFragment;
 

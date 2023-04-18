@@ -11,13 +11,13 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.StatFs;
-import android.support.design.widget.AppBarLayout;
-import android.support.design.widget.CoordinatorLayout;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -339,7 +339,7 @@ public class Utility {
     private static void mostraSnackBar(Context c, CoordinatorLayout coordinatorLayoutView, String messaggio, View.OnClickListener listener, Snackbar.Callback callBack, int messaggioAction) {
         Snackbar snack = Snackbar.make(coordinatorLayoutView, messaggio, Snackbar.LENGTH_LONG);
         View view = snack.getView();
-        TextView tv = (TextView) view.findViewById(android.support.design.R.id.snackbar_text);
+        TextView tv = (TextView) view.findViewById(com.google.android.material.R.id.snackbar_text);
         tv.setTextColor(Color.WHITE);
         snack.setActionTextColor(c.getResources().getColor(R.color.oro));
         if (listener != null) {

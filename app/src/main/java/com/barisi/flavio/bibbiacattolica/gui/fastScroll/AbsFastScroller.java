@@ -1,9 +1,9 @@
 package com.barisi.flavio.bibbiacattolica.gui.fastScroll;
 
 import android.content.Context;
-import android.support.annotation.Nullable;
-import android.support.design.widget.AppBarLayout;
-import android.support.v7.widget.RecyclerView.OnScrollListener;
+import androidx.annotation.Nullable;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.recyclerview.widget.RecyclerView.OnScrollListener;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;

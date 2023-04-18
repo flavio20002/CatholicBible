@@ -2,15 +2,12 @@ package com.barisi.flavio.bibbiacattolica.gui.fastScroll;
 
 
 import android.os.Handler;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnTouchListener;
 
 import com.barisi.flavio.bibbiacattolica.gui.fastScroll.section.AbsSectionIndicator;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 class FastScrollerTouchListener implements OnTouchListener {
 

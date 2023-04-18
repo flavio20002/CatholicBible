@@ -1,12 +1,16 @@
 apply plugin: 'com.android.application'
 
 def getVersionName = { ->
-    def stdout = new ByteArrayOutputStream()
-    exec {
-        commandLine 'git', 'describe', '--tags'
-        standardOutput = stdout
+    try {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--tags'
+            standardOutput = stdout
+        }
+        return stdout.toString().trim()
+    } catch (ignored) {
+        return null
     }
-    return stdout.toString().trim()
 }
 
 def getVersionNumber = { ->
@@ -20,60 +24,44 @@ def getVersionNumber = { ->
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.barisi.flavio.bibbiacattolica"
         minSdkVersion 15
-        targetSdkVersion 29
+        targetSdkVersion 33
         versionCode getVersionNumber()
         versionName getVersionName()
-        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
+        debug {
+            shrinkResources true
+            minifyEnabled true
+        }
         release {
-            minifyEnabled false
+            shrinkResources true
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
     productFlavors {
     }
+    namespace 'com.barisi.flavio.bibbiacattolica'
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:recyclerview-v7:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:design:${rootProject.ext.supportLibVersion}"
-    implementation "com.android.support:preference-v14:${rootProject.ext.supportLibVersion}"
-
-    implementation("com.github.deano2390:MaterialShowcaseView:1.3.4", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.github.paolorotolo:appintro:4.0.0", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.thebluealliance:spectrum:0.6.0", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.google.code.gson:gson:2.8.5", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.github.rey5137:material:1.2.5", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.android.support.constraint:constraint-layout:1.1.3", {
-        exclude group: 'com.android.support'
-    })
-
-    implementation("com.github.chrisbanes:PhotoView:2.0.0", {
-        exclude group: 'com.android.support'
-    })
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
+    implementation 'com.github.deano2390:MaterialShowcaseView:1.3.7'
+    implementation 'com.github.AppIntro:AppIntro:6.2.0'
+    implementation 'com.thebluealliance:spectrum:0.7.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.github.rey5137:material:1.3.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
 
     testImplementation 'junit:junit:4.12'
 }
