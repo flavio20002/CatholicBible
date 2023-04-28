@@ -23,6 +23,16 @@ def getVersionNumber = { ->
 }
 
 android {
+    signingConfigs {
+        release {
+            if (System.getenv("SIGNING_KEY_ALIAS")) {
+                storeFile file(System.getenv("SIGNING_STORE_FILENAME"))
+                keyAlias System.getenv("SIGNING_KEY_ALIAS")
+                keyPassword System.getenv("SIGNING_KEY_PASSWORD")
+                storePassword System.getenv("SIGNING_STORE_PASSWORD")
+            }
+        }
+    }
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
         applicationId "com.barisi.flavio.bibbiacattolica"
@@ -31,6 +41,9 @@ android {
         versionCode getVersionNumber()
         versionName getVersionName()
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        if (System.getenv("SIGNING_KEY_ALIAS")) {
+            signingConfig signingConfigs.release
+        }
     }
     buildTypes {
         debug {

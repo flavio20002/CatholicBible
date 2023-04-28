@@ -5,7 +5,3 @@
 /build
 /captures
 *.iml
-gradlew
-gradlew.bat
-/gradle
-gradle.properties
